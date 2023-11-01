@@ -1,3 +1,6 @@
-<p>action-date works!</p>
-
+<h2>My activities</h2>
+<li *ngFor="let activity of data">
+  <span> {{ activity.date }}</span>
+  <span> {{ activity.count }}</span>
+</li>
 <app-action-date></app-action-date>

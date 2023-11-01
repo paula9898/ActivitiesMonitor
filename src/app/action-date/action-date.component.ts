@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Data } from '../date';
+import { DATA_array } from '../mock-dates';
 
 @Component({
   selector: 'app-action-date',
@@ -7,5 +8,7 @@ import { Data } from '../date';
   styleUrls: ['./action-date.component.css'],
 })
 export class ActionDateComponent {
-  date: Data = [];
+  // date: Data = [];
+
+  data = DATA_array;
 }
