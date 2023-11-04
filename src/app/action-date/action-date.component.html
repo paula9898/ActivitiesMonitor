@@ -1,6 +1,8 @@
 <h2>My activities</h2>
-<li *ngFor="let activity of data">
+<li *ngFor="let activity of statistics">
   <span> {{ activity.date }}</span>
   <span> {{ activity.count }}</span>
 </li>
-<app-action-date></app-action-date>
+
+<p>{{ color }}</p>
+<!-- <app-action-date></app-action-date> -->

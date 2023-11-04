@@ -1,6 +1,6 @@
-import { Data } from './date';
+import { Statistic } from './statistics.model';
 
-export const DATA_array: Data = [
+export const STATISTICS: Statistic[] = [
   {
     date: new Date('01.11.2023'),
     count: 5,

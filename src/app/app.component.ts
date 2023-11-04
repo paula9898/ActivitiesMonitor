@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { STATISTICS } from './mock-dates';
+import { Color } from './color.model';
+import { StatisticsService } from './statistics.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  // date;
+  STATISTICS = this.service.getStatistics();
+  color: Color = 'red';
+
+  constructor(private service: StatisticsService) {}
 }

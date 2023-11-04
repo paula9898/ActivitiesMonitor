@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Data } from '../date';
-import { DATA_array } from '../mock-dates';
+import { Statistic } from '../statistics.model';
+import { Color } from '../color.model';
 
 @Component({
   selector: 'app-action-date',
@@ -8,7 +8,6 @@ import { DATA_array } from '../mock-dates';
   styleUrls: ['./action-date.component.css'],
 })
 export class ActionDateComponent {
-  // date: Data = [];
-
-  data = DATA_array;
+  @Input() statistics: Statistic[] = [];
+  @Input() color: Color = 'blue';
 }
